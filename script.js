@@ -1,3 +1,5 @@
+// scripts/script.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const domainButtons = document.querySelectorAll('.domain-btn');
   const shortenForm = document.getElementById('shorten-form');
