@@ -1,10 +1,10 @@
-/* style.css */
+/* styles/style.css */
 
-/* General reset and setup */
+/* Reset CSS */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -48,22 +48,13 @@ h1 i {
   margin-bottom: 10px;
 }
 
-#domain-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.domain-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
+#domain-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-.domain-btn:hover {
-  background-color: #0056b3;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
 }
 
 #shorten-form {
@@ -73,7 +64,7 @@ h1 i {
 #shorten-form input[type="url"],
 #shorten-form input[type="text"],
 #shorten-form button {
-  width: calc(100% - 20px); /* Consider padding */
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -82,14 +73,14 @@ h1 i {
 }
 
 #shorten-form button {
-  background-color: #28a745;
+  background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 #shorten-form button:hover {
-  background-color: #218838;
+  background-color: #0056b3;
 }
 
 .result {
