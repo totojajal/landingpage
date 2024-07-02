@@ -1,11 +1,16 @@
-/* styles/style.css */
+/* style.css */
+
+/* General reset and setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -63,7 +68,7 @@ h1 i {
 #shorten-form input[type="url"],
 #shorten-form input[type="text"],
 #shorten-form button {
-  width: 100%;
+  width: calc(100% - 20px); /* Consider padding */
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
