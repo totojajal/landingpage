@@ -1,17 +1,12 @@
-// scripts/script.js
-
 document.addEventListener('DOMContentLoaded', () => {
-  const domainButtons = document.querySelectorAll('.domain-btn');
+  const domainSelect = document.getElementById('domain-select');
   const shortenForm = document.getElementById('shorten-form');
   const resultContainer = document.getElementById('result');
 
-  // Event listener for domain selection buttons
-  domainButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      domainButtons.forEach(btn => btn.classList.remove('selected'));
-      button.classList.add('selected');
-      document.getElementById('selected-domain').value = button.getAttribute('data-domain');
-    });
+  // Event listener for domain selection
+  domainSelect.addEventListener('change', () => {
+    const selectedDomain = domainSelect.value;
+    document.getElementById('selected-domain').value = selectedDomain;
   });
 
   // Event listener for form submission
