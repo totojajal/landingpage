@@ -10,15 +10,15 @@
   <div class="container">
     <h1><i class="fas fa-link"></i> URL Shortener</h1>
     <div class="domain-selection">
-      <h2>Select Domain</h2>
-      <table id="domain-table">
-        <tr>
-          <td><button class="domain-btn" data-domain="app1.biox.my.id">app1.biox.my.id</button></td>
-          <td><button class="domain-btn" data-domain="app2.biox.my.id">app2.biox.my.id</button></td>
-          <td><button class="domain-btn" data-domain="app3.biox.my.id">app3.biox.my.id</button></td>
-        </tr>
-        <!-- Tambahkan lebih banyak baris jika diperlukan -->
-      </table>
+      <h2>Select or Enter Domain</h2>
+      <div>
+        <select id="domain-select">
+          <option value="app1.biox.my.id">app1.biox.my.id</option>
+          <option value="app2.biox.my.id">app2.biox.my.id</option>
+          <option value="app3.biox.my.id">app3.biox.my.id</option>
+          <!-- Tambahkan lebih banyak domain jika diperlukan -->
+        </select>
+      </div>
     </div>
     <form id="shorten-form">
       <input type="url" id="original-url" placeholder="Enter the original URL" required>
